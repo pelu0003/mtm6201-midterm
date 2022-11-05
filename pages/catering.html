@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -12,11 +13,27 @@
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-    <header>
+    <div class="skip-links" id="top">
+        <ul class="skiplinks">
+            <li>
+            <a href="#nav">
+                Go to nav
+            </a>
+            </li>
+        
+            <li>
+            <a href="#main">
+                Go to main content
+            </a>
+            </li>
+        </ul>
+
+    </div>
+    <header role="banner">
         <a href="../index.html" class="logoHeader">
-            <img class="logo" alt="company logo" src="../assets/logo.svg">
+            <img class="logo" alt="company logo" src="../assets/logo.svg"  aria-label="Store logo takes you to the home page">
         </a>
-        <nav>
+        <nav role="navigation" id="nav">
             <ul>
                 <li><a href="../pages/aboutUs.html">About Us</a></li>
                 <li><a href="../pages/monday.html">Monday</a></li>
@@ -31,5 +48,89 @@
             </ul>
         </nav>
     </header>
+    <section class="subHeader" role="banner">
+        <form action="#" class="search" method="post" role="search">
+            <label for="searching"> Search</label>
+            <input id="searching" type="image" alt="search" src="../assets/searchIcon.svg">
+        </form>
+        <h1>
+            This is our story with flavours. 
+        </h1>
+        <picture class="decorationImage1">
+            <source srcset="../images/catering/desktop/catering_desktop_simple.png,
+            ../images/catering/desktop/catering_desktop_double.png 2x,
+            ../images/catering/desktop/catering_desktop_triple.png 2.5x"
+            media="(min-width: 1000px)"/>
+
+            <source srcset="../images/catering/tablet/catering_tablet_simple.png,
+            ../images/catering/tablet/catering_tablet_double.png 2x,
+            ../images/catering/tablet/catering_tablet_triple.png 2.5x"
+            media="(min-width: 800px)" />
+
+            <source srcset="../images/catering/mobile/catering_mobile_simple.png,
+            ../images/catering/mobile/catering_mobile_double.png 2x,
+            ../images/catering/mobile/catering_mobile_triple.png 2.5x"
+            media="(min-width: 320px)"/>
+
+            <img src="../images/catering/mobile/catering_mobile_triple.png" alt="picture of cakes">
+        </picture>
+
+    </section>
+    <main class="catering" role="main" id="main">
+        <p class="cateringText">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis fugit ad saepe distinctio itaque quaerat deserunt, commodi magni molestias eligendi ipsum magnam sunt consequatur aperiam blanditiis ea. Totam, ipsa dignissimos.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, suscipit aspernatur sit id accusamus quia reiciendis consectetur nemo totam doloribus commodi, non fuga ex assumenda libero culpa exercitationem neque tempora.
+            Quam consequuntur reiciendis quis, in ab ratione explicabo voluptas dolor fugit, repudiandae quas delectus accusantium ut dolorem cupiditate molestias. Molestiae iusto deserunt aperiam pariatur blanditiis sequi, error sapiente veniam impedit.
+        </p>
+        <form class="cateringForm" role="form" action="thanks.html" method="post">
+            <label for="your_name">
+                Name
+            </label>
+            <input id="your_name" type="text" placeholder="Name" name="fullname" required>
+            <label for="your_mail">
+                Email
+            </label>
+            <input id="your_mail" type="email" placeholder="Email" name="e_mail" required>
+            <label for="your_message">
+                Describe your Event
+            </label>
+            <textarea id="your_message" required>
+                Describe your Event
+            </textarea>
+            <button type="submit">SEND</button>
+
+        </form>
+
+    </main>
+    <footer role="contentinfo">
+        <p class="footerText">
+            216 Elign Street, Ottawa
+            Delivery: 343 567 4231
+            info@bakynder.com
+            caterings@backynder.com
+            &copy;Backynder 
+        </p>
+        <div class="socialMedia">
+            <a href="https://www.facebook.com/" target="_blank" aria-label="Go to facebook store page">
+                <img src="../assets/facebook_icon.svg" alt="facebook icon">
+            </a>
+
+            <a href="https://www.instagram.com/" target="_blank" aria-label="Go to Instagram store page">
+                <img src="../assets/instagram_icon.svg" alt="instagram icon">
+            </a>
+
+            <a href="https://twitter.com/" target="_blank" aria-label="Go to Twitter store page">
+                <img src="../assets/twitter_icon.svg" alt="twitter icon">
+            </a>
+
+            <a href="https://es.linkedin.com/" target="_blank" aria-label="Go to LikedIn store page">
+                <img src="../assets/linkedin_icon.svg" alt="linedIn icon">
+            </a>
+
+        </div>
+
+        <a class="backToTop" href="#top"> Back to Top</a>
+    </footer>
     
 </body>
+</html>
