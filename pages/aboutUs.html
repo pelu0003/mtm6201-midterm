@@ -13,11 +13,27 @@
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-    <header>
-        <a href="../index.html" class="logoHeader">
+    <div class="skip-links" id="top">
+        <ul class="skiplinks">
+            <li>
+            <a href="#nav">
+                Go to nav
+            </a>
+            </li>
+        
+            <li>
+            <a href="#main">
+                Go to main content
+            </a>
+            </li>
+        </ul>
+
+    </div>
+    <header role="banner">
+        <a href="../index.html" class="logoHeader" aria-label="Store logo takes you to the home page">
             <img class="logo" alt="company logo" src="../assets/logo.svg">
         </a>
-        <nav>
+        <nav id="nav">
             <ul>
                 <li><a href="#">About Us</a></li>
                 <li><a href="../pages/monday.html">Monday</a></li>
@@ -32,6 +48,67 @@
             </ul>
         </nav>
     </header>
-    
+    <section class="subHeader" role="banner">
+        <form action="#" class="search" method="post" role="search">
+            <label for="searching"> Search</label>
+            <input id="searching" type="image" alt="search" src="../assets/searchIcon.svg">
+        </form>
+        <h1>
+            This is our story with flavours. 
+        </h1>
+        <picture class="decorationImage1">
+            <source srcset="../images/aboutUs/desktop/about_desktop_simple.png,
+            ../images/aboutUs/desktop/about_desktop_double.png 2x,
+            ../images/aboutUs/desktop/about_desktop_triple.png 2.5x"
+            media="(min-width: 1000px)"/>
+
+            <source srcset="../images/aboutUs/tablet/about_tablet_simple.png,
+            ../images/aboutUs/tablet/about_tablet_double.png 2x,
+            ../images/aboutUs/tablet/about_tablet_triple.png 2.5x"
+            media="(min-width: 800px)" />
+
+            <source srcset="../images/aboutUs/mobile/about_mobile_simple.png,
+            ../images/aboutUs/mobile/about_mobile_double.png 2x,
+            ../images/aboutUs/mobile/about_mobile_triple.png 2.5x"
+            media="(min-width: 320px)"/>
+
+            <img src="../images/aboutUs/mobile/about_mobile_triple.png" alt="picture of cakes">
+        </picture>
+
+    </section>
+    <main id="main" role="main">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, saepe natus facere labore molestias cupiditate ex doloribus perspiciatis molestiae itaque! Nostrum assumenda dolorem molestiae itaque incidunt totam eaque officiis corporis.
+        </p>
+    </main>
+    <footer role="contentinfo">
+        <p class="footerText">
+            216 Elign Street, Ottawa
+            Delivery: 343 567 4231
+            info@bakynder.com
+            caterings@backynder.com
+            &copy;Backynder 
+        </p>
+        <div class="socialMedia">
+            <a href="https://www.facebook.com/" target="_blank" aria-label="Go to facebook store page">
+                <img src="../assets/facebook_icon.svg" alt="facebook icon">
+            </a>
+
+            <a href="https://www.instagram.com/" target="_blank" aria-label="Go to Instagram store page">
+                <img src="../assets/instagram_icon.svg" alt="instagram icon">
+            </a>
+
+            <a href="https://twitter.com/" target="_blank" aria-label="Go to Twitter store page">
+                <img src="../assets/twitter_icon.svg" alt="twitter icon">
+            </a>
+
+            <a href="https://es.linkedin.com/" target="_blank" aria-label="Go to LikedIn store page">
+                <img src="../assets/linkedin_icon.svg" alt="linedIn icon">
+            </a>
+
+        </div>
+
+        <a class="backToTop" href="#top"> Back to Top</a>
+    </footer>
 </body>
 </html>
