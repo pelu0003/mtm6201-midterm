@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -12,11 +13,27 @@
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-    <header>
+    <div class="skip-links" id="top">
+        <ul class="skiplinks">
+            <li>
+            <a href="#nav">
+                Go to nav
+            </a>
+            </li>
+        
+            <li>
+            <a href="#main">
+                Go to main content
+            </a>
+            </li>
+        </ul>
+    
+    </div>
+    <header role="banner">
         <a href="../index.html" class="logoHeader">
-            <img class="logo" alt="company logo" src="../assets/logo.svg">
+            <img class="logo" alt="company logo" src="../assets/logo.svg" aria-label="Store logo takes you to the home page">
         </a>
-        <nav>
+        <nav role="navigation">
             <ul>
                 <li><a href="../pages/aboutUs.html">About Us</a></li>
                 <li><a href="../pages/monday.html">Monday</a></li>
@@ -31,5 +48,292 @@
             </ul>
         </nav>
     </header>
+    <section class="subHeader" role="banner">
+        <form action="#" class="search" method="post" role="search">
+            <label for="searching"> Search</label>
+            <input id="searching" type="image" alt="search" src="../assets/searchIcon.svg">
+        </form>
+        <h1>
+            Your Wednesday flavours. 
+        </h1>
+        <picture class="decorationImage1">
+            <source srcset="../images/products/desktop/product_desktop_simple.png,
+            ../images/products/desktop/product_desktop_double.png 2x,
+            ../images/products/desktop/product_desktop_triple.png 2.5x"
+            media="(min-width: 1000px)"/>
+
+            <source srcset="../images/products/tablet/product_tablet_simple.png,
+            ../images/products/tablet/product_tablet_double.png 2x,
+            ../images/products/tablet/product_tablet_triple.png 2.5x"
+            media="(min-width: 800px)" />
+
+            <source srcset="../images/products/mobile/product_mobile_simple.png,
+            ../images/products/mobile/product_mobile_double.png 2x,
+            ../images/products/mobile/product_mobile_triple.png 2.5x"
+            media="(min-width: 320px)"/>
+
+            <img src="../images/products/mobile/product_mobile_triple.png" alt="picture of cakes">
+        </picture>
+
+    </section>
+    <main class="products" role="main" id="main">
+        
+        <div class="product_1">
+            <h2>
+                Bagles
+            </h2>
+            <picture>
+                <source srcset="../images/products/desktop/bagles/bagle_simple.jpg,
+            ../images/products/desktop/bagles/bagle_double.jpg 2x,
+            ../images/products/desktop/bagle/bagle_triple.jpg 2.5x"
+            media="(min-width: 1000px)"/>
+
+            <source srcset="../images/products/tablet/bagles/bagle_simple.jpg,
+            ../images/products/tablet/bagles/bagle_double.jpg 2x,
+            ../images/products/tablet/bagles/baglet_triple.jpg 2.5x"
+            media="(min-width: 800px)" />
+
+            <source srcset="../images/products/mobile/bagles/bagle_simple.jpg,
+            ../images/products/mobile/bagles/bagle_double.jpg 2x,
+            ../images/products/mobile/bagles/bagle_triple.jpg 2.5x"
+            media="(min-width: 320px)"/>
+
+            <img src="../images/products/mobile/bagles/bagle_triple.jpg" alt="picture of bagle">
+
+            </picture>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, officiis! Assumenda aliquid sequi rem natus? Ipsam et alias iure! Debitis adipisci officiis eligendi provident itaque tempore distinctio nemo placeat aut.
+            </p>
+
+        </div>
+        <div class="product_2">
+            <h2>
+                Bread
+            </h2>
+            <picture>
+                <source srcset="../images/products/desktop/bread/bread_simple.jpg,
+            ../images/products/desktop/bread/bread_double.jpg 2x,
+            ../images/products/desktop/bread/bread_triple.jpg 2.5x"
+            media="(min-width: 1000px)"/>
+
+            <source srcset="../images/products/tablet/bread/bread_simple.jpg,
+            ../images/products/tablet/bread/bread_double.jpg 2x,
+            ../images/products/tablet/bread/bread_triple.jpg 2.5x"
+            media="(min-width: 800px)" />
+
+            <source srcset="../images/products/mobile/bread/bread_simple.jpg,
+            ../images/products/mobile/bread/bread_double.jpg 2x,
+            ../images/products/mobile/bread/bread_triple.jpg 2.5x"
+            media="(min-width: 320px)"/>
+
+            <img src="../images/products/mobile/bread/bread_triple.jpg" alt="picture of bread">
+                
+            </picture>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, officiis! Assumenda aliquid sequi rem natus? Ipsam et alias iure! Debitis adipisci officiis eligendi provident itaque tempore distinctio nemo placeat aut.
+            </p>
+
+        </div>
+        <div class="product_3">
+            <h2>
+                Cakes
+            </h2>
+            <picture>
+                <source srcset="../images/products/desktop/cakes/cake_simple.jpg,
+                ../images/products/desktop/cakes/cake_double.jpg 2x,
+                ../images/products/desktop/cakes/cake_triple.jpg 2.5x"
+                media="(min-width: 1000px)"/>
+    
+                <source srcset="../images/products/tablet/cakes/cake_simple.jpg,
+                ../images/products/tablet/cakes/cake_double.jpg 2x,
+                ../images/products/tablet/cakes/cake_triple.jpg 2.5x"
+                media="(min-width: 800px)" />
+    
+                <source srcset="../images/products/mobile/cakes/cake_simple.jpg,
+                ../images/products/mobile/cakes/cake_double.jpg 2x,
+                ../images/products/mobile/cakes/cake_triple.jpg 2.5x"
+                media="(min-width: 320px)"/>
+    
+                <img src="../images/products/mobile/cakes/cake_triple.jpg" alt="picture of cake">
+                    
+                
+            </picture>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, officiis! Assumenda aliquid sequi rem natus? Ipsam et alias iure! Debitis adipisci officiis eligendi provident itaque tempore distinctio nemo placeat aut.
+            </p>
+
+        </div>
+        <div class="product_4">
+            <h2>
+                Croissants
+            </h2>
+            <picture>
+                <source srcset="../images/products/desktop/croissants/croissant_simple.jpg,
+                ../images/products/desktop/croissants/croissant_double.jpg 2x,
+                ../images/products/desktop/croissants/croissant_triple.jpg 2.5x"
+                media="(min-width: 1000px)"/>
+    
+                <source srcset="../images/products/tablet/croissants/croissant_simple.jpg,
+                ../images/products/tablet/croissants/croissant_double.jpg 2x,
+                ../images/products/tablet/croissants/croissant_triple.jpg 2.5x"
+                media="(min-width: 800px)" />
+    
+                <source srcset="../images/products/mobile/croissants/croissant_simple.jpg,
+                ../images/products/mobile/croissants/croissant_double.jpg 2x,
+                ../images/products/mobile/croissants/croissant_triple.jpg 2.5x"
+                media="(min-width: 320px)"/>
+    
+                <img src="../images/products/mobile/croissants/croissant_triple.jpg" alt="picture of croissant">
+                
+            </picture>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, officiis! Assumenda aliquid sequi rem natus? Ipsam et alias iure! Debitis adipisci officiis eligendi provident itaque tempore distinctio nemo placeat aut.
+            </p>
+
+        </div>
+        <div class="product_5">
+            <h2>
+                Cupcakes
+            </h2>
+            <picture>
+                <source srcset="../images/products/desktop/cupcakes/cupcake_simple.jpg,
+                ../images/products/desktop/cupcakes/cupcake_double.jpg 2x,
+                ../images/products/desktop/cupcakes/cupcake_triple.jpg 2.5x"
+                media="(min-width: 1000px)"/>
+    
+                <source srcset="../images/products/tablet/cupcakes/cupcake_simple.jpg,
+                ../images/products/tablet/cupcakes/cupcake_double.jpg 2x,
+                ../images/products/tablet/cupcakes/cupcake_triple.jpg 2.5x"
+                media="(min-width: 800px)" />
+    
+                <source srcset="../images/products/mobile/cupcakes/cupcake_simple.jpg,
+                ../images/products/mobile/cupcakes/cupcake_double.jpg 2x,
+                ../images/products/mobile/cupcakes/cupcake_triple.jpg 2.5x"
+                media="(min-width: 320px)"/>
+    
+                <img src="../images/products/mobile/cupcakes/cupcake_triple.jpg" alt="picture of cupcake">
+                
+            </picture>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, officiis! Assumenda aliquid sequi rem natus? Ipsam et alias iure! Debitis adipisci officiis eligendi provident itaque tempore distinctio nemo placeat aut.
+            </p>
+
+        </div>
+        <div class="product_6">
+            <h2>
+                Sandwiches
+            </h2>
+            <picture>
+                <source srcset="../images/products/desktop/sandwich/sandwich_simple.jpg,
+                ../images/products/desktop/sandwich/sandwich_double.jpg 2x,
+                ../images/products/desktop/sandwich/sandwich_triple.jpg 2.5x"
+                media="(min-width: 1000px)"/>
+    
+                <source srcset="../images/products/tablet/sandwich/sandwich_simple.jpg,
+                ../images/products/tablet/sandwich/sandwich_double.jpg 2x,
+                ../images/products/tablet/sandwich/sandwich_triple.jpg 2.5x"
+                media="(min-width: 800px)" />
+    
+                <source srcset="../images/products/mobile/sandwich/sandwich_simple.jpg,
+                ../images/products/mobile/sandwich/sandwich_double.jpg 2x,
+                ../images/products/mobile/sandwich/sandwich_triple.jpg 2.5x"
+                media="(min-width: 320px)"/>
+    
+                <img src="../images/products/mobile/cupcakes/cupcake_triple.jpg" alt="picture of sandwich">
+                
+            </picture>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, officiis! Assumenda aliquid sequi rem natus? Ipsam et alias iure! Debitis adipisci officiis eligendi provident itaque tempore distinctio nemo placeat aut.
+            </p>
+
+        </div>
+        <div class="product_7">
+            <h2>
+                Tarts
+            </h2>
+            <picture>
+                <source srcset="../images/products/desktop/tarts/tart_simple.jpg,
+                ../images/products/desktop/tarts/tart_double.jpg 2x,
+                ../images/products/desktop/tarts/tart_triple.jpg 2.5x"
+                media="(min-width: 1000px)"/>
+    
+                <source srcset="../images/products/tablet/tarts/tart_simple.jpg,
+                ../images/products/tablet/tarts/tart_double.jpg 2x,
+                ../images/products/tablet/tarts/tart_triple.jpg 2.5x"
+                media="(min-width: 800px)" />
+    
+                <source srcset="../images/products/mobile/tarts/tart_simple.jpg,
+                ../images/products/mobile/tarts/tart_double.jpg 2x,
+                ../images/products/mobile/tarts/tart_triple.jpg 2.5x"
+                media="(min-width: 320px)"/>
+    
+                <img src="../images/products/mobile/tarts/tart_triple.jpg" alt="picture of tart">
+                
+            </picture>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, officiis! Assumenda aliquid sequi rem natus? Ipsam et alias iure! Debitis adipisci officiis eligendi provident itaque tempore distinctio nemo placeat aut.
+            </p>
+
+        </div>
+        <div class="product_8">
+            <h2>
+                Waffles
+            </h2>
+            <picture>
+                <source srcset="../images/products/desktop/waffles/wafle_simple.jpg,
+                ../images/products/desktop/waffles/wafle_double.jpg 2x,
+                ../images/products/desktop/waffles/wafle_triple.jpg 2.5x"
+                media="(min-width: 1000px)"/>
+    
+                <source srcset="../images/products/tablet/waffles/wafle_simple.jpg,
+                ../images/products/tablet/waffles/wafle_double.jpg 2x,
+                ../images/products/tablet/waffles/wafle_triple.jpg 2.5x"
+                media="(min-width: 800px)" />
+    
+                <source srcset="../images/products/mobile/waffles/wafle_simple.jpg,
+                ../images/products/mobile/waffles/wafle_double.jpg 2x,
+                ../images/products/mobile/waffles/wafle_triple.jpg 2.5x"
+                media="(min-width: 320px)"/>
+    
+                <img src="../images/products/mobile/waffles/wafle_triple.jpg" alt="picture of waffle">
+                
+            </picture>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, officiis! Assumenda aliquid sequi rem natus? Ipsam et alias iure! Debitis adipisci officiis eligendi provident itaque tempore distinctio nemo placeat aut.
+            </p>
+
+        </div>
+
+    </main>
+    <footer role="contentinfo">
+        <p class="footerText">
+            216 Elign Street, Ottawa
+            Delivery: 343 567 4231
+            info@bakynder.com
+            caterings@backynder.com
+            &copy;Backynder 
+        </p>
+        <div class="socialMedia">
+            <a href="https://www.facebook.com/" target="_blank" aria-label="Go to facebook store page">
+                <img src="../assets/facebook_icon.svg" alt="facebook icon">
+            </a>
+
+            <a href="https://www.instagram.com/" target="_blank" aria-label="Go to Instagram store page">
+                <img src="../assets/instagram_icon.svg" alt="instagram icon">
+            </a>
+
+            <a href="https://twitter.com/" target="_blank" aria-label="Go to Twitter store page">
+                <img src="../assets/twitter_icon.svg" alt="twitter icon">
+            </a>
+
+            <a href="https://es.linkedin.com/" target="_blank" aria-label="Go to LikedIn store page">
+                <img src="../assets/linkedin_icon.svg" alt="linedIn icon">
+            </a>
+
+        </div>
+
+        <a class="backToTop" href="#top"> Back to Top</a>
+    </footer>
     
 </body>
+</html>
