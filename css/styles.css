@@ -1,0 +1,64 @@
+html,
+::before,
+::after {
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: acumin-pro, sans-serif;
+}
+
+body{
+    margin: 0;
+}
+
+header{
+    background-color: #730099;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: 
+    "logo"
+    "nav"
+    ;
+}
+
+.logoHeader{
+     grid-area: logo;
+     text-align: center;
+     margin: 0;
+  
+}
+
+.logo{
+    width: auto;
+    
+}
+
+nav{
+    grid-area: nav;
+}
+
+ul{
+    list-style: none;
+}
+
+ul li{
+    text-align: center;
+}
+
+nav ul li a{
+    color: #e6D117;
+    text-decoration: none;
+    width: 100%;
+    font-family: raleway, sans-serif;
+    font-size: 1.5rem;
+    
+}
+
+.subHeader{
+    background-color: #c1e4bc;
+    display: grid;
+}
+
+main{
+    background-color: #a98bbd;
+}
