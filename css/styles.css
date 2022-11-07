@@ -140,6 +140,7 @@ footer{
 
 .footerText{
     grid-area: footerText;
+    margin-left: 5%;
     
 }
 
