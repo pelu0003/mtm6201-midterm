@@ -404,6 +404,7 @@ footer{
     top: -3em;
     font-family: raleway,sans-serif;
     color: #730099;
+    text-decoration: none;
 }
 
 .skiplinks a:focus{
@@ -411,6 +412,7 @@ footer{
     top: 0;
     border: 3px solid #730099;
     background-color: #e6D117;
+    color: #730099;
 }
 
 .backToTop{
@@ -420,14 +422,14 @@ footer{
     position: absolute;
     bottom: -100%;
     font-family: raleway,sans-serif;
-    color: #730099;
+    color: #e6D117;
 
 }
 
 .backToTop:focus{
     display: inline;
-    border:3px solid #730099 ;
-    background-color: #e6D117;
+    border:3px solid #e6D117 ;
+    background-color: #730099;
     position: relative;
     bottom: 0px;
     left: 0px;
