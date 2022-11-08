@@ -7,6 +7,10 @@ html,
     overflow-x: hidden;
 }
 
+body{
+    margin: 0;
+}
+
 h1{
     font-family: elsie, cursive;
     font-size: 2.5rem;
@@ -14,9 +18,14 @@ h1{
     text-align: center;
 }
 
-body{
-    margin: 0;
+h2{
+    font-family: raleway, sans-serif;
+    font-size: 2rem;
+    color: #e6D117;
+    text-align: center;
 }
+
+
 
 header{
     background-color: #730099;
@@ -291,3 +300,60 @@ footer{
     margin-bottom: 2%;
     width: 100%;
 }
+
+.products{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8,1fr);
+    grid-template-areas: 
+    "bagles"
+    "bread"
+    "cakes"
+    "croissants"
+    "cupcakes"
+    "sandwiches"
+    "tarts"
+    "waffles"
+    ;
+    align-items: flex-start;
+}
+
+.product_1{
+    grid-template-columns: bagles;
+}
+
+.product_2{
+    grid-template-columns: bread;
+}
+
+.product_3{
+    grid-template-columns: cakes;
+}
+
+.product_4{
+    grid-template-columns: croissants;
+}
+
+.product_5{
+    grid-template-columns: cupcakes;
+}
+
+.product_6{
+    grid-template-columns: sandwiches;
+}
+
+.product_7{
+    grid-template-columns: tarts;
+}
+
+.product_8{
+    grid-template-columns: waffles;
+}
+
+.products picture img{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+
