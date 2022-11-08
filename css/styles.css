@@ -36,6 +36,7 @@ header{
     "logo"
     "nav"
     ;
+    align-items: flex-start;
 }
 
 .logoHeader{
@@ -47,6 +48,7 @@ header{
 
 .logo{
     width: auto;
+    margin-bottom: 1.5rem;
     
 }
 
@@ -59,10 +61,14 @@ nav{
 
 ul{
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 ul li{
     text-align: center;
+    
 }
 
 nav ul li a{
@@ -71,7 +77,7 @@ nav ul li a{
     width: 100%;
     font-family: raleway, sans-serif;
     font-size: 1.5rem;
-    
+    margin-bottom: 5px;   
 }
 
 .subHeader{
@@ -384,6 +390,7 @@ footer{
     margin-right: 40%;
     display: inline-block;
     border-radius: 30%;
+    font-family: raleway, sans-serif;
 }
 
 .skiplinks{
@@ -395,6 +402,15 @@ footer{
 .skiplinks a{
     position: absolute;
     top: -3em;
+    font-family: raleway,sans-serif;
+    color: #730099;
+}
+
+.skiplinks a:focus{
+    position: absolute;
+    top: 0;
+    border: 3px solid #730099;
+    background-color: #e6D117;
 }
 
 .backToTop{
@@ -402,7 +418,45 @@ footer{
     margin: 0;
     padding: 0;
     position: absolute;
-    bottom: -3em;
+    bottom: -100%;
+    font-family: raleway,sans-serif;
+    color: #730099;
 
 }
 
+.backToTop:focus{
+    display: inline;
+    border:3px solid #730099 ;
+    background-color: #e6D117;
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+}
+
+ul li a:hover{
+    color: #998a08;
+    border-top:3px solid #998a08 ;
+    border-bottom:3px solid #998a08 ;
+}
+
+ul li a:focus{
+    color: #998a08;
+    border:3px solid #998a08 ;
+    
+}
+
+.thanksButton:hover{
+    background-color: #730099;
+    color: #998a08;
+    border: 3px solid #998a08;
+}
+
+.thanksButton:focus{
+    background-color: #730099;
+    color: #998a08;
+    border: 3px solid #998a08;
+}
+
+.socialMedia a:focus{
+    border: 3px solid #730099;
+}
