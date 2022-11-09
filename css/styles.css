@@ -43,18 +43,19 @@ header{
      grid-area: logo;
      text-align: center;
      margin: 0;
+     display: block;
   
 }
 
 .logo{
     width: auto;
-    margin-bottom: 1.5rem;
+    margin-bottom: 5%;
     
 }
 
 nav{
     grid-area: nav;
-    margin-top: 3%;
+    margin-top: 5%;
     margin-bottom: 3%;
     align-self: flex-end;
 }
@@ -72,12 +73,18 @@ ul li{
 }
 
 nav ul li a{
+    display: inline-block;
     color: #e6D117;
     text-decoration: none;
-    width: 100%;
+    width: 20%;
+    margin-left: 40%;
+    margin-right: 40%;
     font-family: raleway, sans-serif;
     font-size: 1.5rem;
-    margin-bottom: 5px;   
+    margin-bottom: 5px;
+    transform: translateX(0px);
+    transition: transform 0.5s;
+      
 }
 
 .subHeader{
@@ -439,6 +446,8 @@ ul li a:hover{
     color: #998a08;
     border-top:3px solid #998a08 ;
     border-bottom:3px solid #998a08 ;
+    transition-duration: 0.3s;
+    transition-delay: 0.3s;
 }
 
 ul li a:focus{
@@ -451,6 +460,8 @@ ul li a:focus{
     background-color: #730099;
     color: #998a08;
     border: 3px solid #998a08;
+    transition-duration: 0.3s;
+    transition-delay: 0.3s;
 }
 
 .thanksButton:focus{
@@ -462,3 +473,26 @@ ul li a:focus{
 .socialMedia a:focus{
     border: 3px solid #730099;
 }
+
+ul li a:active{
+ transform: translateX(100px);
+ border-left: none;
+ border-right: none;
+}
+
+@keyframes animationLogo{
+
+    from{transform:translateY(0px);
+         transform:scale(1);}
+
+    to{transform:translateY(-30px);
+       transform:scale(0.5);}
+}
+
+.logoHeader:active{
+    animation-name: animationLogo;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+
+}
+
