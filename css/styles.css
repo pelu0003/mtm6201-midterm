@@ -518,12 +518,11 @@ ul li a:active{
 
     .subHeader{
         grid-template-columns: 1fr 2.5fr;
-        grid-template-rows: 1fr 100px;
+        grid-template-rows: 100px 2.5fr;
         grid-template-areas: 
-        "title picture" 
-        "search search"
+        "search search" 
+        "title picture"
         ;
-        padding-top: 3%;
         align-items: flex-start;
     }
 
@@ -647,7 +646,7 @@ ul li a:active{
 }
 
 .search{
-    margin-right: 2%;
+    margin-right: 5%;
 }
 
 .search input{
