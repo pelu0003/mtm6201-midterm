@@ -18,6 +18,12 @@ h1{
     text-align: center;
 }
 
+.thanksContainer h1{
+    text-align: center;
+    padding-left: 0;
+    margin-bottom: 3%;
+}
+
 h2{
     font-family: raleway, sans-serif;
     font-size: 2rem;
@@ -530,6 +536,10 @@ ul li a:active{
         align-items: flex-start;
     }
 
+    .decorationImage1{
+        width: 50%;
+    }
+
 
     .logo{
         margin-bottom: 10%;
@@ -606,6 +616,7 @@ ul li a:active{
 
     h1{
         font-size: 3rem;
+        padding-left: 15%;
     }
 
     .logo{
@@ -649,6 +660,10 @@ ul li a:active{
     "title picture search"
     ;
     padding-top: 10%;
+}
+
+.decorationImage1{
+    width: auto;
 }
 
 .search{
