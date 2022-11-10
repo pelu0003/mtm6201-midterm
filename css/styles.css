@@ -559,6 +559,11 @@ ul li a:active{
         padding-bottom: 2%;
     }
 
+    .products p{
+        text-align: left;
+        margin-left: 10%;
+    }
+
     .product_1{
         margin: 3%;
     }
@@ -712,5 +717,29 @@ footer img{
     align-items: flex-start;
     padding: 0;
     padding-bottom: 4%;
+}
+.product_1{
+    margin: 5%;
+}
+.product_2{
+    margin: 5%;
+}
+.product_3{
+    margin: 5%;
+}
+.product_4{
+    margin: 5%;
+}
+.product_5{
+    margin: 5%;
+}
+.product_6{
+    margin: 5%;
+}
+.product_7{
+    margin: 5%;
+}
+.product_8{
+    margin: 5%;
 }
 }
