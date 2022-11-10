@@ -49,13 +49,13 @@ header{
 
 .logo{
     width: auto;
-    margin-bottom: 5%;
+    margin-bottom: 10%;
     
 }
 
 nav{
     grid-area: nav;
-    margin-top: 5%;
+    margin-top: 10%;
     margin-bottom: 3%;
     align-self: flex-end;
 }
@@ -63,12 +63,15 @@ nav{
 ul{
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content:center;
+   
 }
 
 ul li{
     text-align: center;
+    width: 100%;
     
 }
 
@@ -76,11 +79,12 @@ nav ul li a{
     display: inline-block;
     color: #e6D117;
     text-decoration: none;
+    text-align: center;
     width: 20%;
     margin-left: 40%;
     margin-right: 40%;
     font-family: raleway, sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-bottom: 5px;
     transform: translateX(0px);
     transition: transform 0.5s;
@@ -427,7 +431,7 @@ footer{
     margin: 0;
     padding: 0;
     position: absolute;
-    bottom: -100%;
+    bottom: -100;
     font-family: raleway,sans-serif;
     color: #e6D117;
 
@@ -446,6 +450,8 @@ ul li a:hover{
     color: #998a08;
     border-top:3px solid #998a08 ;
     border-bottom:3px solid #998a08 ;
+    border-left: none;
+    border-right: none;
     transition-duration: 0.3s;
     transition-delay: 0.3s;
 }
@@ -496,3 +502,166 @@ ul li a:active{
 
 }
 
+@media screen and (min-width:800px){
+
+    h1{
+        text-align: left;
+        padding-left: 30%;
+        margin: 0;
+      
+    }
+
+    .subHeader{
+        grid-template-columns: 1fr 2.5fr;
+        grid-template-rows: 1fr 100px;
+        grid-template-areas: 
+        "title picture" 
+        "search search"
+        ;
+        padding-top: 3%;
+        align-items: flex-start;
+    }
+
+
+    .logo{
+        margin-bottom: 5%;
+    }
+
+    nav{
+        margin-top: 5%;
+    }
+
+    .socialMedia{
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
+
+    .break{
+        display:none;
+    }
+
+    .products{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(4,1fr);
+        grid-template-areas: 
+        "bagles bread"
+        "cakes croissants"
+        "cupcakes sandwiches"
+        "tarts waffles"
+        ;
+    }
+
+    .product_1{
+        margin: 3%;
+    }
+    .product_2{
+        margin: 3%;
+    }
+    .product_3{
+        margin: 3%;
+    }
+    .product_4{
+        margin: 3%;
+    }
+    .product_5{
+        margin: 3%;
+    }
+    .product_6{
+        margin: 3%;
+    }
+    .product_7{
+        margin: 3%;
+    }
+    .product_8{
+        margin: 3%;
+    }
+}
+
+@media screen and (min-width:1380px){
+    header{
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "logo nav"
+        ;
+    }
+
+    h1{
+        font-size: 3rem;
+    }
+
+    .logo{
+        margin-bottom: 0;
+    }
+
+    nav{
+        margin-top: 0;
+       
+    }
+
+    ul{
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-evenly;
+    }
+
+    ul li{
+        text-align: left;
+        width: auto;
+        margin-left: 1%;
+        margin-right: 1%;
+       
+    }
+
+    nav ul li a{
+        text-align: left;
+        margin: 0;
+        width: auto;
+    }
+
+     ul li a:active{
+        transform: translateY(30px);
+    }
+
+    
+.subHeader{
+    grid-template-columns: 1.5fr 2.5fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "title picture search"
+    ;
+    padding-top: 3%;
+}
+
+.search{
+    margin-right: 2%;
+}
+
+.search input{
+    border-radius: 25%
+}
+
+footer{
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "footerText social"
+    ;
+    padding: 0;
+}
+
+.footerText{
+    text-align: left;
+}
+
+.socialMedia{
+    justify-content:flex-end;
+}
+
+.socialMedia a{
+    width: 20%;
+    display: inline-block;
+}
+
+}
