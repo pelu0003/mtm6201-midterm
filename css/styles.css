@@ -156,10 +156,12 @@ main{
     padding: 10%;
 }
 
-main p{
+ p{
     color: white;
     text-align: center;
+    font-size: 1.2rem;
 }
+
 
 footer{
     background-color: #e6D117;
@@ -179,6 +181,8 @@ footer{
     margin-left: 5%;
     margin-right: 5%;
     text-align: center;
+    color: black;
+    font-size: 1.2rem;
     
 }
 
