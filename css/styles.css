@@ -37,6 +37,7 @@ header{
     "nav"
     ;
     align-items: flex-start;
+    width: 100%;
 }
 
 .logoHeader{
@@ -49,7 +50,7 @@ header{
 
 .logo{
     width: auto;
-    margin-bottom: 10%;
+    margin-bottom: 15%;
     
 }
 
@@ -88,6 +89,8 @@ nav ul li a{
     margin-bottom: 5px;
     transform: translateX(0px);
     transition: transform 0.5s;
+    border-top: 3px solid #730099;
+    border-bottom: 3px solid #730099;
       
 }
 
@@ -528,12 +531,13 @@ ul li a:active{
 
 
     .logo{
-        margin-bottom: 5%;
+        margin-bottom: 10%;
     }
 
     nav{
         margin-top: 5%;
     }
+
 
     .socialMedia{
         flex-direction: row;
@@ -596,6 +600,7 @@ ul li a:active{
         grid-template-areas: 
         "logo nav"
         ;
+        position: fixed;
     }
 
     h1{
@@ -642,7 +647,7 @@ ul li a:active{
     grid-template-areas: 
     "title picture search"
     ;
-    padding-top: 3%;
+    padding-top: 10%;
 }
 
 .search{
