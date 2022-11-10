@@ -182,8 +182,9 @@ footer{
 }
 
 .socialMedia img{
-   width: 40%;
-   height: 40%;
+   width: 20%;
+   height: 20%;
+   margin: 2%;
 }
 
 .socialMedia a{
@@ -657,11 +658,17 @@ footer{
     padding: 0;
 }
 
+footer img{
+    width: 30%;
+    height: 30%;
+}
+
 .footerText{
     text-align: left;
 }
 
 .socialMedia{
+    margin-top: 2%;
     justify-content:flex-end;
 }
 
