@@ -243,10 +243,12 @@ footer{
     width: 100%;
     resize: none;
    overflow: hidden;
-   
+  
     
     
 }
+
+
 
 .contactForm button{
     background-color: #e6D117;
@@ -336,35 +338,35 @@ footer{
 }
 
 .product_1{
-    grid-template-columns: bagles;
+    grid-area: bagles;
 }
 
 .product_2{
-    grid-template-columns: bread;
+    grid-area: bread;
 }
 
 .product_3{
-    grid-template-columns: cakes;
+    grid-area: cakes;
 }
 
 .product_4{
-    grid-template-columns: croissants;
+    grid-area: croissants;
 }
 
 .product_5{
-    grid-template-columns: cupcakes;
+    grid-area: cupcakes;
 }
 
 .product_6{
-    grid-template-columns: sandwiches;
+    grid-area: sandwiches;
 }
 
 .product_7{
-    grid-template-columns: tarts;
+    grid-area: tarts;
 }
 
 .product_8{
-    grid-template-columns: waffles;
+    grid-area: waffles;
 }
 
 .products picture img{
@@ -426,12 +428,14 @@ footer{
     color: #730099;
 }
 
-.backToTop{
+.backToTop {
+    display: inline;
     text-decoration: none;
     margin: 0;
     padding: 0;
     position: absolute;
-    bottom: -100;
+    bottom: -100%;
+    left:-100%;
     font-family: raleway,sans-serif;
     color: #e6D117;
 
