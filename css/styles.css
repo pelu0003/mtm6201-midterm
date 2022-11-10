@@ -550,6 +550,8 @@ ul li a:active{
         "cupcakes sandwiches"
         "tarts waffles"
         ;
+        padding: 0;
+        padding-bottom: 2%;
     }
 
     .product_1{
@@ -663,5 +665,41 @@ footer{
     width: 20%;
     display: inline-block;
 }
+.contact{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "text contact"
+    ;
+}
 
+.contact p{
+    text-align: left;
+    margin-right: 5%;
+}
+
+.catering{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "text contact"
+    ;
+}
+
+.catering p{
+    text-align: left;
+    margin-right: 5%;
+}
+
+.products{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "bagles bread cakes croissants"
+    "cupcakes sandwiches tarts waffles"
+    ;
+    align-items: flex-start;
+    padding: 0;
+    padding-bottom: 4%;
+}
 }
