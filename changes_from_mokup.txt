@@ -1,0 +1,2 @@
+1 The footer is different in tablet and mobile because it looks better in a vertical format
+2 I changed some colors because of accesibility contrast tests, as well as some font sizes 
