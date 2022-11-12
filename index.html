@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+
+    <!--I chose to create this div containing this links to give easy acsess to the navidation and main contet for the people
+    that uses the keyboard to navigate the site-->
     <div class="skip-links" id="top">
         <ul class="skiplinks">
             <li>
@@ -30,6 +33,7 @@
 
     </div>
     <header role="banner">
+        <!--I put this image inside the img tag to use it as a home link-->
         <a href="#" class="logoHeader" aria-label="Store logo takes you to the home page">
             <img class="logo" alt="company logo" src="assets/logo.svg">
         </a>
@@ -51,11 +55,14 @@
     <section class="subHeader" role="banner">
         <form action="#" class="search" method="post" role="search">
             <label for="searching"> Search</label>
+            <!--I used this image type the get a look similar to the mokup-->
             <input id="searching" type="image" alt="search" src="assets/searchIcon.svg">
         </form>
         <h1 role="heading">
             Find the flavour that matches your daily mood. 
         </h1>
+        <!--I used the picture tag to give the site responsive images and to 
+        pick different images acording to the viewport size-->
         <picture class="decorationImage1">
             <source srcset="images/home/desktop/home_desktop_simple.png,
             images/home/desktop/home_desktop_double.png 2x,
@@ -86,6 +93,7 @@
     </main>
     <footer role="contentinfo">
         <p class="footerText">
+            <!--This class is to call it for a grid area-->
             216 Elign Street, Ottawa <br>
             Delivery: 343 567 4231<br class="break">
             info@bakynder.com <br>
@@ -93,6 +101,7 @@
             &copy;Backynder 
         </p>
         <div class="socialMedia">
+            <!--I created this div to display it as a grid in css-->
             <a href="https://www.facebook.com/" target="_blank" aria-label="Go to facebook store page">
                 <img src="assets/facebook_icon.svg" alt="facebook icon">
             </a>
@@ -110,7 +119,7 @@
             </a>
 
         </div>
-
+        <!--This link is here to make it easy the navigation for the people that uses the keyboard-->
         <a class="backToTop" href="#top"> Back to Top</a>
     </footer>
     
